@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"> 
+
+<h:head>
+	<meta charset="UTF-8" />
+	<title>
+		<ui:insert name="titulo">ContatosJSF</ui:insert>
+	</title>
+	<link rel="stylesheet" 
+		href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+</h:head> 
+<h:body> 
+	<div id="nav">
+		<ui:insert name="menu">
+			<h:form id="frm-menu">
+			
+				 <p:toolbar>
+			        <f:facet name="left">
+			            <p:commandButton value="Home" icon="fa fa-fw fa-home"
+					 		action="index?faces-redirect=true" />
+			            <p:commandButton value="Estado" icon="fa fa-fw fa-globe-americas"
+							 action="views/estado/index?faces-redirect=true" />
+						<p:commandButton value="Cidade" icon="fa fa-fw fa-building"
+							 action="views/cidade/index?faces-redirect=true" />
+						<p:commandButton value="Contatos" icon="fa fa-fw fa-users"
+					 		action="views/contatos/index?faces-redirect=true" />
+			        </f:facet>
+			    </p:toolbar>
+			    
+			</h:form>
+		</ui:insert>
+	</div>
+	
+	<br />
+	
+	<div id="content">
+		<ui:insert name="conteudo">Página sem Conteúdo</ui:insert>
+	</div>
+</h:body> 
+</html>

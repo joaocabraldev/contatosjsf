@@ -22,6 +22,7 @@ public class EstadoController implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+	@SuppressWarnings("cdi-ambiguous-dependency")
 	@Inject
 	private Repositorio<Estado> repositorio;
 
