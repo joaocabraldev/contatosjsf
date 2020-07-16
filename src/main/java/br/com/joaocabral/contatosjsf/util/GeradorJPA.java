@@ -14,7 +14,7 @@ public class GeradorJPA {
 	private EntityManagerFactory factory;
 	
 	public GeradorJPA() {
-		this.factory = Persistence.createEntityManagerFactory("semed");
+		this.factory = Persistence.createEntityManagerFactory("contatosjsf");
 	}
 	
 	@Produces
